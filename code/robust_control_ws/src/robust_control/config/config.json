@@ -1,0 +1,30 @@
+{
+    "simulation": {
+        "number_of_traj_to_sim": 5,
+        "traj_update_rate": 1
+    },
+    "base": {
+        "N": 20,
+        "NX": 3,
+        "NU": 2,
+        "atr_ts": 0.01,
+        "traj_ts": 0.1,
+        "atr_id": 0,
+        "build_directory": "mpc_build",
+        "build_mode": "release",
+        "optimizer_name": "controller",
+        "solver_max_duration_micros": 10000
+    },
+    "mpc_weights": {
+        "q_xy": 7500,
+        "q_theta": 2000,
+        "qN_xy": 0,
+        "qN_theta": 0,
+        "q_v": 200,
+        "q_w": 10,
+        "q_dv": 10,
+        "q_dw": 0.25,
+        "q_vneg": 100,
+        "q_u": 100000
+    }
+}
